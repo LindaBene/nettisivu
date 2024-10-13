@@ -6,17 +6,23 @@
   <title>Linda – Henkilökohtainen CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Hamburger menu styling */
-    .menu-icon {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #F2E9EB;
+      color: #31383F; 
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #DD8EA4;
+      padding: 20px;
     }
 
     nav ul {
       list-style-type: none;
       padding: 0;
-      margin: 0;
     }
 
     nav ul li {
@@ -28,6 +34,65 @@
       color: white;
       text-decoration: none;
       font-size: 18px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+      padding: 20px;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    h1, h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #DD8EA4;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .button {
+      background-color: #FEDD89;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #e6c779;
+    }
+
+    .about {
+      margin-top: 20px;
+    }
+
+    /* Hamburger menu styling */
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
@@ -49,6 +114,7 @@
     .show {
       display: flex !important;
     }
+
   </style>
 </head>
 <body>
@@ -68,7 +134,7 @@
     <section class="hero">
       <h1>Hei, olen Linda. Tervetuloa sivuilleni! 👋</h1>
       <p>Tutustu työkokemukseeni, saavutuksiini ja projekteihini.</p>
-      <img src="profiilikuva.jpg" alt="Linda profiilikuva" style="width:200px; border-radius:50%;">
+      <img src="profiilikuva.jpg" alt="Linda profiilikuva">
     </section>
 
     <section class="about">
