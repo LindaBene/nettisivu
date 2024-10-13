@@ -9,13 +9,12 @@ body {
 
 header {
   background-color: #DD8EA4;
-  padding: 20px; 
+  padding: 20px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
@@ -30,78 +29,23 @@ nav ul li a {
   font-size: 18px; 
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-}
-
-
 main {
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
   min-height: 100vh;
+  padding: 20px;
 }
 
-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-h1, h2 {
+.portfolio h1 {
+  font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   color: #DD8EA4;
 }
 
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
+.portfolio p {
   font-size: 16px;
-}
-
-.profile-img {
-  width: 150px; 
-  height: auto;
-  border-radius: 50%; 
-  display: block;
-  margin: 0 auto; 
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FEDD89;
-  color: black; 
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #e6c779; 
-}
-
-.portfolio {
-  text-align: center;
-  margin: 20px;
 }
 
 .job {
@@ -109,22 +53,19 @@ p {
   padding: 15px;
   margin: 15px 0;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-details {
   text-align: left;
 }
 
-.button {
-  background-color: #FEDD89;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #e6c779;
+.job img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
 }
 
 .button {
@@ -142,65 +83,3 @@ p {
   background-color: #e6c779; 
 }
 
-.contact-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section h1 {
-  text-align: center;
-  color: #d98b9b; 
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-form label {
-  margin-bottom: 5px;
-  text-align: left;
-  width: 100%;
-  max-width: 400px;
-  color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.contact-form textarea {
-  resize: vertical;
-}
-
-.contact-form button {
-  background-color: #FEDD89;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #e6c779;
-}
-
-@media (max-width: 600px) {
-  .contact-section {
-    width: 90%;
-  }
-}
