@@ -5,28 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ota yhteyttä</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #F2E9EB; /* Palauttaa oikean taustavärin */
+      color: #31383F;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <<header>
-  <nav>
-    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-    <ul id="menu">
-      <li><a href="index.html">Etusivu</a></li>
-      <li><a href="about.html">Tietoa minusta</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Ota yhteyttä</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <ul id="menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="about.html">Tietoa minusta</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Ota yhteyttä</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("show");
-  }
-</script>
-
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 
   <main>
     <section class="contact-section">
