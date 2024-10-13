@@ -96,15 +96,15 @@ p {
   margin: 15px 0;
   border-radius: 10px;
   text-align: left;
-  display: flex; /* Tämä asettaa sisällön vierekkäin */
-  justify-content: space-between; /* Tämä varmistaa, että teksti ja kuva ovat vastakkaisilla puolilla */
-  align-items: center; /* Tämä asettaa kuvan samalle tasolle tekstin kanssa */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 .job img {
-  vertical-align: middle;
+  vertical-align: rightT;
   margin-left: 20px;
-  width: 100px; /* Voit muokata leveyttä tarpeen mukaan */
+  width: 50px; 
 }
 
 .button {
