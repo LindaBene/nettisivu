@@ -23,28 +23,20 @@
       <h1>Ota yhteyttä</h1>
       <p>Olen aina avoin uusille yhteistyömahdollisuuksille ja projekteille. Voit ottaa yhteyttä alla olevan lomakkeen kautta.</p>
       
-      <!-- Yhteydenottolomake -->
-      <form action="submit_form.php" method="post" class="contact-form">
-        <div class="form-group">
-          <label for="name">Nimi:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Sähköposti:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Aihe:</label>
-          <input type="text" id="subject" name="subject" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Viestikenttä:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <!-- CTA-painike -->
-        <div class="form-group">
-          <button type="submit" class="button">Lähetä viesti</button>
-        </div>
+      <form class="contact-form">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="aihe">Aihe:</label>
+        <input type="text" id="aihe" name="aihe" required>
+
+        <label for="viesti">Viestikenttä:</label>
+        <textarea id="viesti" name="viesti" rows="4" required></textarea>
+
+        <button type="submit" class="cta-button">Lähetä viesti</button>
       </form>
     </section>
   </main>
