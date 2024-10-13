@@ -10,12 +10,32 @@
       background-color: #F2E9EB; 
       color: #31383F;
     }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    .show {
+      display: flex !important;
+    }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <span class="menu-icon" onclick="toggleMenu()"></span>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span> 
       <ul id="menu">
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="about.html">Tietoa minusta</a></li>
