@@ -9,7 +9,8 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <ul id="menu">
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="about.html">Tietoa minusta</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -62,5 +63,12 @@
   <footer>
     <p>Yhteystiedot: linda@esimerkki.com</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
