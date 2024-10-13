@@ -116,9 +116,10 @@ p {
 }
 
 .job img {
-  margin-left: auto;  
-  margin-right: 20px; 
-  width: 100px; 
+  width: 100px;
+  height: auto;
+  float: right;
+  margin-left: 15px;
 }
 
 .button {
