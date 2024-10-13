@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linda – Henkilökohtainen CV</title>
+  <title>Ota yhteyttä</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
   <nav>
     <ul>
@@ -19,27 +19,33 @@
   </nav>
 </header>
 
-  <main>
-    <section class="hero">
-      <h1>Hei, olen Linda. Tervetuloa sivuilleni! 👋</h1>
-      <p>Tutustu työkokemukseeni, saavutuksiini ja projekteihini.</p>
-      <img src="profiilikuva.jpg" alt="Linda profiilikuva" class="profile-img">
-    </section>
+<main>
+  <section class="contact-section">
+    <h1>Ota yhteyttä</h1>
+    <p>Olen aina avoin uusille yhteistyömahdollisuuksille ja projekteille. Voit ottaa yhteyttä alla olevan lomakkeen kautta.</p>
+    
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Nimi:</label>
+      <input type="text" id="name" name="name" required>
 
-    <section class="about">
-      <p>Olen Linda, copywriter ja sisällöntuotannon ammattilainen. Minulla on vahva kokemus luovan kirjoittamisen ja markkinointiviestinnän parissa. Työskentelen tarkasti ja strategisesti projektien parissa, joissa tarvitaan luovuutta ja vahvaa kielenhallintaa.</p>
-      <p>Tutustu töihini portfolion kautta tai ota minuun yhteyttä yhteistyön merkeissä.</p>
-      
-      <div style="display: flex; justify-content: center; gap: 20px;">
-        <a href="contact.html" class="button">Ota yhteyttä</a>
-        <a href="portfolio.html" class="button">Portfolio</a>
-      </div>
-    </section>
-  </main>
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" name="email" required>
 
-  <footer>
-    <p>Yhteystiedot: linda@esimerkki.com</p>
-  </footer>
+      <label for="subject">Aihe:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Viestikenttä:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Lähetä viesti</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Yhteystiedot: linda@esimerkki.com</p>
+</footer>
+
 </body>
 </html>
 
