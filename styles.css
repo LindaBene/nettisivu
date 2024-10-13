@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F2E9EB;
+  color: #31383F; 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #DD8EA4;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px;
+}
+
+/* Kuvan tyyli */
+img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Otsikot */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #DD8EA4;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.profile-img {
+    width: 150px; 
+    height: auto;
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto; 
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FEDC90;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: #FEDD89; /* Keltainen väri */
+  color: black; /* Tekstin väri */
+  padding: 10px 20px; /* Painikkeen sisäiset reunat */
+  border: none; /* Ei reunuksia */
+  border-radius: 5px; /* Hieman pyöristetyt kulmat */
+  text-decoration: none; /* Ei alleviivausta */
+  font-weight: bold; /* Tekstin lihavointi */
+  font-size: 16px; /* Tekstin koko */
+  cursor: pointer; /* Hiiren osoitin muuttuu klikattavaksi */
+}
+
+.cta-button:hover {
+  background-color: #e6c779; /* Tummempi keltainen hover-efekti */
+}
