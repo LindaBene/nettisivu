@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linda – Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #F2E9EB; 
+      color: #31383F;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
-      <span class="menu-icon" onclick="toggleMenu()"></span>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
       <ul id="menu">
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="about.html">Tietoa minusta</a></li>
@@ -18,6 +24,13 @@
       </ul>
     </nav>
   </header>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 
   <main>
     <section class="portfolio">
@@ -63,12 +76,5 @@
   <footer>
     <p>Yhteystiedot: linda@esimerkki.com</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("show");
-    }
-  </script>
 </body>
 </html>
