@@ -1,4 +1,3 @@
-/* Pääfontti leipätekstille */
 body {
   font-family: 'Lato', sans-serif; 
   background-color: #F2E9EB;
@@ -8,9 +7,8 @@ body {
   text-align: center;
 }
 
-/* Navigaation ja headerin asetukset */
 header {
-  background-color: #DD8EA4; /* Taustaväri */
+  background-color: #DD8EA4; 
   padding: 20px;
 }
 
@@ -25,12 +23,11 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white; /* Tekstin väri navigaatiossa */
+  color: white; 
   text-decoration: none;
-  font-size: 18px; /* Linkkien koko */
+  font-size: 18px; 
 }
 
-/* Main sisältö ja sen asettelu */
 main {
   display: flex;
   flex-direction: column;
@@ -46,25 +43,23 @@ img {
   margin-bottom: 20px;
 }
 
-/* Otsikkofontti ja värit */
 h1, h2 {
-  font-family: 'Montserrat', sans-serif; /* Otsikkofontti */
-  color: #DD8EA4; /* Otsikoiden väri */
+  font-family: 'Montserrat', sans-serif;
+  color: #DD8EA4;
 }
 
 h1 {
-  font-size: 32px; /* Pääotsikon koko */
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 24px; /* Väliotsikoiden koko */
+  font-size: 24px;
 }
 
 p {
-  font-size: 16px; /* Leipätekstin koko */
+  font-size: 16px;
 }
 
-/* Profiilikuva */
 .profile-img {
   width: 150px; 
   height: auto;
@@ -73,12 +68,11 @@ p {
   margin: 0 auto; 
 }
 
-/* CTA-painikkeet */
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FEDD89; /* Painikkeen taustaväri */
-  color: black; /* Painikkeen tekstin väri */
+  background-color: #FEDD89;
+  color: black; 
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -89,25 +83,22 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #e6c779; /* Hover-efekti */
+  background-color: #e6c779; 
 }
 
-/* Portfolio-osio */
 .portfolio {
   text-align: center;
   margin: 20px;
 }
 
-/* Työkokemukset */
 .job {
-  background-color: #f4f4f4; /* Taustaväri työkokemuksissa */
+  background-color: #f4f4f4;
   padding: 15px;
   margin: 15px 0;
   border-radius: 10px;
   text-align: left;
 }
 
-/* Painikkeiden tyyli */
 .button {
   background-color: #FEDD89;
   color: black;
@@ -120,25 +111,23 @@ p {
 }
 
 .button:hover {
-  background-color: #e6c779; /* Hover-efekti */
+  background-color: #e6c779; 
 }
 
-/* Yhteydenottolomake */
 .contact-section {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4; /* Sama taustaväri kuin työkokemuksissa */
+  background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h1 {
   text-align: center;
-  color: #d98b9b; /* Otsikon väri yhteydenottosivulla */
+  color: #d98b9b; 
 }
 
-/* Yhteydenottolomakkeen kentät */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -168,7 +157,6 @@ p {
   resize: vertical;
 }
 
-/* Painikkeen tyyli yhteydenottolomakkeessa */
 .contact-form button {
   background-color: #FEDD89;
   color: black;
@@ -183,7 +171,6 @@ p {
   background-color: #e6c779;
 }
 
-/* Media queries mobiililaitteille */
 @media (max-width: 600px) {
   .contact-section {
     width: 90%;
