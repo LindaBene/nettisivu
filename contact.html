@@ -8,15 +8,25 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="about.html">Tietoa minusta</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Ota yhteyttä</a></li>
-      </ul>
-    </nav>
-  </header>
+    <<header>
+  <nav>
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <ul id="menu">
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="about.html">Tietoa minusta</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Ota yhteyttä</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
+</script>
+
 
   <main>
     <section class="contact-section">
