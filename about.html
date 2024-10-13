@@ -11,32 +11,47 @@
       color: #31383F;
     }
 
+    /* Ylävalikon tyyli */
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* Mobiiliystävällinen asettelu */
     @media (max-width: 768px) {
       nav ul {
-        display: none;
         flex-direction: column;
+        align-items: center;
       }
 
       nav ul li {
-        display: block;
         margin: 10px 0;
       }
-
-      .menu-icon {
-        display: block;
-      }
-    }
-
-    .show {
-      display: flex !important;
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <span class="menu-icon" onclick="toggleMenu()">☰</span> 
-      <ul id="menu">
+      <ul>
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="about.html">Tietoa minusta</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -44,13 +59,6 @@
       </ul>
     </nav>
   </header>
-
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("show");
-    }
-  </script>
 
   <main>
     <section class="about">
