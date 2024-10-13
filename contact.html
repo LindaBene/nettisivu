@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ota yhteyttä</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="about.html">Tietoa minusta</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Ota yhteyttä</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Ota yhteyttä</h1>
+      <p>Olen aina avoin uusille yhteistyömahdollisuuksille ja projekteille. Voit ottaa yhteyttä alla olevan lomakkeen kautta.</p>
+      
+      <!-- Yhteydenottolomake -->
+      <form action="submit_form.php" method="post" class="contact-form">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Aihe:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Viestikenttä:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <!-- CTA-painike -->
+        <button type="submit" class="button">Lähetä viesti</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Yhteystiedot: linda@esimerkki.com</p>
+  </footer>
+</body>
+</html>
