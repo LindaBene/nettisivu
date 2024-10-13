@@ -8,25 +8,39 @@ body {
 }
 
 header {
-  background-color: #DD8EA4; 
-  padding: 20px;
+  background-color: #DD8EA4;
+  padding: 20px; 
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 15px;
 }
 
 nav ul li a {
-  color: white; 
+  color: white;
   text-decoration: none;
   font-size: 18px; 
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
 
 main {
   display: flex;
