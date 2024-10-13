@@ -24,10 +24,11 @@
     nav ul {
       list-style-type: none;
       padding: 0;
+      display: flex;
+      justify-content: center;
     }
 
     nav ul li {
-      display: inline;
       margin-right: 15px;
     }
 
@@ -89,34 +90,16 @@
       margin-top: 20px;
     }
 
-    /* Hamburger menu styling */
-    .menu-icon {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      left: 20px; 
-    }
-
+    /* Mobiiliystävällinen asettelu */
     @media (max-width: 768px) {
       nav ul {
-        display: none;
         flex-direction: column;
+        align-items: center;
       }
 
       nav ul li {
-        display: block;
         margin: 10px 0;
       }
-
-      .menu-icon {
-        display: block;
-      }
-    }
-
-    .show {
-      display: flex !important;
     }
 
   </style>
@@ -124,8 +107,7 @@
 <body>
   <header>
     <nav>
-      <span class="menu-icon" onclick="toggleMenu()">☰</span>
-      <ul id="menu">
+      <ul>
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="about.html">Tietoa minusta</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -156,13 +138,6 @@
   <footer>
     <p>Yhteystiedot: linda@esimerkki.com</p>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("show");
-    }
-  </script>
 </body>
 </html>
 
