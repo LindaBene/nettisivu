@@ -115,13 +115,6 @@ p {
   align-items: center; 
 }
 
-.job img {
-  width: 100px;
-  height: auto;
-  float: right;
-  margin-left: 15px;
-}
-
 .button {
   background-color: #FEDD89;
   color: black;
