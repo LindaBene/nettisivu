@@ -109,10 +109,21 @@ p {
   padding: 15px;
   margin: 15px 0;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Tämä asettaa tekstin ylös */
+}
+
+.job .content {
   text-align: left;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+}
+
+.job img {
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 100px;
+  height: auto;
+  float: right; /* Tämä asettaa logon oikealle */
 }
 
 .button {
