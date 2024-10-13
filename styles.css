@@ -1,178 +1,271 @@
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #F2E9EB;
-  color: #31383F; 
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linda – Henkilökohtainen CV</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #F2E9EB;
+      color: #31383F; 
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-header {
-  background-color: #DD8EA4;
-  padding: 20px;
-}
+    header {
+      background-color: #DD8EA4;
+      padding: 20px;
+    }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  min-height: 100vh; 
-  padding: 20px;
-}
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+      padding: 20px;
+    }
 
-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
 
-h1, h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #DD8EA4;
-}
+    h1, h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #DD8EA4;
+    }
 
-h1 {
-  font-size: 32px;
-}
+    h1 {
+      font-size: 32px;
+    }
 
-h2 {
-  font-size: 24px;
-}
+    h2 {
+      font-size: 24px;
+    }
 
-p {
-  font-size: 16px;
-}
+    p {
+      font-size: 16px;
+    }
 
-.profile-img {
-  width: 150px; 
-  height: auto;
-  border-radius: 50%; 
-  display: block;
-  margin: 0 auto; 
-}
+    .profile-img {
+      width: 150px; 
+      height: auto;
+      border-radius: 50%; 
+      display: block;
+      margin: 0 auto; 
+    }
 
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FEDD89;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 20px;
-  cursor: pointer;
-}
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #FEDD89;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
 
-.cta-button:hover {
-  background-color: #e6c779;
-}
+    .cta-button:hover {
+      background-color: #e6c779;
+    }
 
-.portfolio {
-  text-align: center;
-  margin: 20px;
-}
+    .portfolio {
+      text-align: center;
+      margin: 20px;
+    }
 
-.job {
-  background-color: #f4f4f4;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 10px;
-  text-align: left;
-}
+    .job {
+      background-color: #f4f4f4;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 10px;
+      text-align: left;
+    }
 
-.button {
-  background-color: #FEDD89;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .button {
+      background-color: #FEDD89;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.button:hover {
-  background-color: #e6c779;
-}
+    .button:hover {
+      background-color: #e6c779;
+    }
 
-.contact-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+    .contact-section {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.contact-section h1 {
-  text-align: center;
-  color: #d98b9b;
-}
+    .contact-section h1 {
+      text-align: center;
+      color: #d98b9b;
+    }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.contact-form label {
-  margin-bottom: 5px;
-  text-align: left;
-  width: 100%;
-  max-width: 400px;
-  color: #333;
-}
+    .contact-form label {
+      margin-bottom: 5px;
+      text-align: left;
+      width: 100%;
+      max-width: 400px;
+      color: #333;
+    }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
 
-.contact-form textarea {
-  resize: vertical;
-}
+    .contact-form textarea {
+      resize: vertical;
+    }
 
-.contact-form button {
-  background-color: #FEDD89;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .contact-form button {
+      background-color: #FEDD89;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-.contact-form button:hover {
-  background-color: #e6c779;
-}
+    .contact-form button:hover {
+      background-color: #e6c779;
+    }
 
-@media (max-width: 600px) {
-  .contact-section {
-    width: 90%;
-  }
-}
+    @media (max-width: 600px) {
+      .contact-section {
+        width: 90%;
+      }
+    }
+
+    /* Hamburger menu styling */
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    .show {
+      display: flex !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <ul id="menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="about.html">Tietoa minusta</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Ota yhteyttä</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hei, olen Linda. Tervetuloa sivuilleni! 👋</h1>
+      <p>Tutustu työkokemukseeni, saavutuksiini ja projekteihini.</p>
+      <img src="profiilikuva.jpg" alt="Linda profiilikuva" class="profile-img">
+    </section>
+
+    <section class="about">
+      <p>Olen Linda, copywriter ja sisällöntuotannon ammattilainen. Minulla on vahva kokemus luovan kirjoittamisen ja markkinointiviestinnän parissa. Työskentelen tarkasti ja strategisesti projektien parissa, joissa tarvitaan luovuutta ja vahvaa kielenhallintaa.</p>
+      <p>Tutustu töihini portfolion kautta tai ota minuun yhteyttä yhteistyön merkeissä.</p>
+      
+      <a href="contact.html" class="button">Ota yhteyttä</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Yhteystiedot: linda@esimerkki.com</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
