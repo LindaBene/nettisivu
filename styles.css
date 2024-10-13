@@ -99,6 +99,11 @@ p {
   text-align: left;
 }
 
+.job img {
+  vertical-align: middle;
+  margin-top: -10px;
+}
+
 .button {
   background-color: #FEDD89;
   color: black;
@@ -176,3 +181,4 @@ p {
     width: 90%;
   }
 }
+
